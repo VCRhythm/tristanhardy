@@ -4,9 +4,11 @@
 
 <% content_for :body do %>
 
-  <% if @posts.size > 1 %>
+  <% if @posts.size > 0 %>
     <%= render 'post_short', post: @posts[0] %>
-    <%= render 'posts', posts: @posts[1..@posts.size] %>
+    <% if @posts.size > 1 %>
+      <%= render 'posts', posts: @posts[1..@posts.size] %>
+    <% end %>
   <% else %>
     <h4>No posts.</h4>
   <% end %>
