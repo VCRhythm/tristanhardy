@@ -1,5 +1,4 @@
-#bg
-{
+#bg {
   position: fixed;
   top: 0;
   left: 0;
@@ -16,4 +15,9 @@
   min-width: 50%;
   min-height: 50%;
  }
+}
+
+.panel-body img {
+  margin-left: 10px;
+  margin-bottom: 10px;
 }

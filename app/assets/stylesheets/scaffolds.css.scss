@@ -1,22 +1,18 @@
-html
-{
+html {
   position: relative;
   min-height: 100%;
 }
 
-body 
-{
+body {
   margin-bottom: 30px;
 }
 
-.body-container
-{
+.body-container {
   margin-top:70px;
   margin-bottom:40px;
 }
 
-.footer
-{
+.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -31,8 +27,7 @@ body
   }
 }
 
-.media
-{
+.media {
   border: solid 3px grey;
   padding-left:10px;
   padding-right:10px;
