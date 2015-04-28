@@ -5,6 +5,7 @@
   </div>
   <div class="panel-body">
     <%= post.body.html_safe %>
+    <%= render 'posts/tags', post: post %>
   </div>
   <div class="panel-footer">
     <%= link_to "Comment, please!", new_post_comment_path(post), class: "btn btn-default pull-right" %>

@@ -4,25 +4,11 @@
 
 <% content_for :body do %>
 
-<%= render 'post_short', post: @posts[0] %>
+  <% if @posts.size > 1 %>
+    <%= render 'post_short', post: @posts[0] %>
+    <%= render 'posts', posts: @posts[1..@posts.size] %>
+  <% else %>
+    <h4>No posts.</h4>
+  <% end %>
 
-<% if @posts.size > 1 %>
-<table class="table">
-  <thead>
-    <tr>
-      <th>Previous Posts</th>
-      <th>Date</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @posts[1..@posts.size].each do |post| %>
-      <tr>
-        <td><%= link_to post.title, post %></td>
-        <td><%= post.date.to_formatted_s(:long_ordinal) %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-<% end %>
 <% end %>

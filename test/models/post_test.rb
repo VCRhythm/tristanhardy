@@ -8,6 +8,7 @@
 #  date       :datetime
 #  created_at :datetime
 #  updated_at :datetime
+#  short_body :text
 #
 
 require 'test_helper'

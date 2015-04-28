@@ -29,6 +29,8 @@ class PostsController < ApplicationController
   def create
       @post = Post.new(post_params)
       @post.body = @post.body.html_safe
+      @post.short_body = @post.body.split('</p>')[0]+'</p>'
+      set_tags
 
       respond_to do |format|
         if @post.save
@@ -44,6 +46,9 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
   def update
+      @post.short_body = post_params[:body].split('</p>')[0]+'</p>'
+      set_tags
+
       respond_to do |format|
         if @post.update(post_params)
           format.html { redirect_to @post, notice: 'Post was successfully updated.' }
@@ -79,6 +84,18 @@ class PostsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_post
       @post = Post.find(params[:id])
+    end
+    
+    def set_tags
+      @tags = params[:tags].split(',');
+      @tags.each do |tag|
+        if(Tag.exists?(name:tag))
+          newTag = Tag.where(name:tag).first
+        else
+          newTag = Tag.create(name:tag)
+        end
+        @post.tags << newTag
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

@@ -1,0 +1,8 @@
+<% content_for :navbar do %>
+  <%= render 'shared/navbar_top' %>
+<% end %>
+
+<% content_for :body do %>
+  <h1>#<%= @tag.name %></h1>
+  <%= render 'posts/posts', posts: @tag.posts %>
+<% end %>

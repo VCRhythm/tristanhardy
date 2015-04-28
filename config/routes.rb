@@ -4,6 +4,7 @@ Vacantfrequency::Application.routes.draw do
     resources :comments
   end
  
+  resources :tags, only: [:show]
   root 'posts#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
