@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'annotate'
 gem 'devise'
+gem 'font_assets'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
