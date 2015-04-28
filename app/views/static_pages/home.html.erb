@@ -6,4 +6,17 @@
   <div id="bg">
     <%= image_tag 'background.jpg' %>
   </div>
+  <div style="position:absolute; right:5%; padding: 10px 30px; color: white; max-width: 450px; margin: auto; background-color:rgba(0, 0, 0, 0.8); top: 5%">
+    <h1 style="font-size:5em;" >Tristan T. Hardy</h1>
+    <h2>Providing Legal Assistance to Accelerate Your Start-up Growth</h4>
+    <%= link_to "Email Me", "mailto:tristan@lawofthings.com", class: "center-block btn btn-success" %>
+    <h4>Attorney, start-up consultant, crowdfunding advocate, Ruby and C# developer, data scientist</h4>
+    <h4>Find my work at:</h4>
+    <h4>
+      <span style="text-align: center" class="center-block"><span style="font-size:2em; top: -10px; position: relative; font-weight:bold">/</span>
+        <%=link_to "http://www.lawofthings.com", style: "color: lightgreen", class: "pull-left" do %><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Law Of Things<% end %>
+       <%= link_to "http://www.vacantfrequency.com", style: "color: lightgreen", class: "pull-right" do %><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> Vacant Frequency<% end %>
+      </span>
+    </h4>
+  </div>
 <% end %>

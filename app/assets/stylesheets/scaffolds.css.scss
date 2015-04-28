@@ -7,6 +7,14 @@ body {
   margin-bottom: 30px;
 }
 
+.navbar-default .navbar-brand {
+  color:darkgreen;
+}
+
+.navbar-inverse .navbar-brand {
+  color:lightgreen;
+}
+
 .body-container {
   margin-top:70px;
   margin-bottom:40px;
