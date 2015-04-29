@@ -29,3 +29,10 @@
     @extend .img-responsive;
   }
 }
+.cc-attribution {
+  background-color:black;
+  text-align:center;
+  a {
+    color:lightgreen;
+  }
+}
