@@ -34,8 +34,8 @@ class PostsController < ApplicationController
   def create
       @post = Post.new(post_params)
       @post.body = @post.body.html_safe
-      short_body = @post.body.split('</p>')[0]
-      @post.short_body = short_body.split('<p>')[1]
+      short_body = @post.body.split('</p>')[0] + '</p>'
+      @post.short_body = '<p>' + short_body.split('<p>')[1]
       set_tags
 
       respond_to do |format|
@@ -52,8 +52,8 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
   def update
-      short_body = post_params[:body].split('</p>')[0]+'</p>'
-      @post.short_body = short_body.split('<p>')[1]
+      short_body = post_params[:body].split('</p>')[0] + '</p>'
+      @post.short_body = '<p>' + short_body.split('<p>')[1]
       @post.tags.delete_all
       set_tags
 
