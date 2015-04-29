@@ -79,5 +79,7 @@ Vacantfrequency::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  config.font_assets.origin = 'http://tristanhardy.herokuapp.com'
   
 end
