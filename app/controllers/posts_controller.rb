@@ -22,6 +22,11 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
+    @tag_names = ""
+    @post.tags.each do |tag|
+      @tag_names << tag.name 
+      @tag_names << ","
+    end 
   end
 
   # POST /posts
@@ -49,6 +54,7 @@ class PostsController < ApplicationController
   def update
       short_body = post_params[:body].split('</p>')[0]+'</p>'
       @post.short_body = short_body.split('<p>')[1]
+      @post.tags.delete_all
       set_tags
 
       respond_to do |format|

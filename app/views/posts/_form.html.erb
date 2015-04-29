@@ -21,7 +21,7 @@
   </div>
   <div class="form-group">
     <%= label_tag "Tags" %><br>
-    <%= text_field_tag 'tags', nil, class: "form-control" %>
+    <%= text_field_tag 'tags', @tag_names, class: "form-control" %>
   </div>
   <div class="form-group">
     <%= f.label :date %><br>
