@@ -12,7 +12,8 @@
   left: 0;
   right: 0;
   margin: auto;
-  width: 100%;
+  min-width: 100%;
+  max-width: 200%;
   min-height: 100%;
  }
 }
