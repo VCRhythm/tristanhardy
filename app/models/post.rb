@@ -13,7 +13,7 @@
 
 class Post < ActiveRecord::Base
   default_scope { order("date DESC") }
-  has_many :comments, -> { order("date DESC") }
+  has_many :comments, -> { order("date") }
 
   has_many :manifests
   has_many :tags, through: :manifests
