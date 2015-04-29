@@ -11,7 +11,7 @@
     <% posts.each do |post| %>
       <tr>
         <td><strong><%= link_to post.title, post %></strong></td>
-        <td><%= post.comments.size %></td>
+        <td style="text-align:center"><%= post.comments.size %></td>
         <td><%= render 'posts/tags', post: post %></td> 
       </tr>
     <% end %>

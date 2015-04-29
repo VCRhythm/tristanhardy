@@ -5,7 +5,7 @@
   on <%= comment.date.to_formatted_s(:long_ordinal) %>
   </h4>
   <i>by</i> <%= comment.username %>
-  <% if current_user.admin? %>
+  <% if current_user != nil && current_user.admin? %>
     <%= link_to "Edit", edit_post_comment_path(@post, comment), class: 'btn btn-info pull-right' %>
     <%= link_to "Delete", post_comment_path(@post, comment), method: 'delete', class: 'btn btn-danger pull-right', confirm: "Are you sure?" %>
   <% end %>
