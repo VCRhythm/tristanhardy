@@ -18,10 +18,16 @@ body {
 .body-container {
   margin-top:70px;
   margin-bottom:40px;
+  @extend .container;
+}
+
+.home-container {
+  min-height:850px;
+  @extend .container;
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 30px;
