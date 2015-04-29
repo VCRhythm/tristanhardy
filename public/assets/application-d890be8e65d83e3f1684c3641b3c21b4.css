@@ -8599,12 +8599,22 @@ body {
 }
 
 /* line 10, /home/user/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-default .navbar-brand {
+  color: darkgreen;
+}
+
+/* line 14, /home/user/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-inverse .navbar-brand {
+  color: lightgreen;
+}
+
+/* line 18, /home/user/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
 .body-container {
   margin-top: 70px;
   margin-bottom: 40px;
 }
 
-/* line 15, /home/user/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
+/* line 23, /home/user/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
 .footer {
   position: absolute;
   bottom: 0;
@@ -8614,13 +8624,13 @@ body {
   background-color: black;
   text-align: right;
 }
-/* line 24, /home/user/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
+/* line 32, /home/user/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
 .footer .container {
   padding-right: 15px;
   padding-left: 15px;
 }
 
-/* line 30, /home/user/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
+/* line 38, /home/user/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
 .media {
   border: solid 3px grey;
   padding-left: 10px;
@@ -8648,7 +8658,7 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  min-width: 50%;
+  min-width: 100%;
   min-height: 50%;
 }
 
