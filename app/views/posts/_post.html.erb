@@ -1,7 +1,7 @@
 <div class="panel panel-default">
   <div class="panel-heading">
     <strong><%= post.title %></strong>
-    <span class="pull-right"><%= post.date.to_formatted_s(:long_ordinal) %></span>
+    <div><%= post.date.to_formatted_s(:long_ordinal) %></div>
   </div>
   <div class="panel-body">
     <%= post.body.html_safe %>
