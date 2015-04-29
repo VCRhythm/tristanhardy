@@ -1776,7 +1776,7 @@ img {
 }
 
 /* line 81, /home/user/.rvm/gems/ruby-2.1.2/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_scaffolding.scss */
-.img-responsive {
+.img-responsive, .panel-body .img-holder img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -8663,7 +8663,24 @@ body {
 }
 
 /* line 20, /home/user/tristanhardy/app/assets/stylesheets/home.css.scss */
-.panel-body img {
-  margin-left: 10px;
-  margin-bottom: 10px;
+.panel-body .img-holder {
+  background-color: black;
+  position: relative;
+  left: -15px;
+  top: -15px;
+  width: 102.8%;
+}
+/* line 26, /home/user/tristanhardy/app/assets/stylesheets/home.css.scss */
+.panel-body .img-holder img {
+  margin: 0 auto;
+}
+
+/* line 31, /home/user/tristanhardy/app/assets/stylesheets/home.css.scss */
+.cc-attribution {
+  background-color: black;
+  text-align: center;
+}
+/* line 34, /home/user/tristanhardy/app/assets/stylesheets/home.css.scss */
+.cc-attribution a {
+  color: lightgreen;
 }
