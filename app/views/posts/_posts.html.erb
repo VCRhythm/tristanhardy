@@ -1,20 +1,18 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Previous Posts</th>
+      <th>Posts</th>
       <th>Comments</th>
       <th>Tags</th>
-      <th>Date</th>
     </tr>
   </thead>
 
   <tbody>
     <% posts.each do |post| %>
       <tr>
-        <td><strong><%= link_to post.title, post %></strong><%= ('<p>' + post.short_body.split('<p>')[1]).html_safe %></td>
+        <td><strong><%= link_to post.title, post %></strong></td>
         <td><%= post.comments.size %></td>
         <td><%= render 'posts/tags', post: post %></td> 
-        <td><%= post.date.to_formatted_s(:long_ordinal) %></td>
       </tr>
     <% end %>
   </tbody>
