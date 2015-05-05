@@ -3,14 +3,12 @@
 <% end %>
 
 <% content_for :body do %>
-  <div id="bg">
-    <%= image_tag 'background.jpg' %>
-  </div>
-  <div style="position:absolute; right:5%; padding: 10px 30px; color: white; max-width: 450px; margin: auto; background-color:rgba(0, 0, 0, 0.8); top: 5%">
-    <h1 style="text-align:center; font-size:5em;" >Tristan T. Hardy</h1>
+  <div id="bg"><%= image_tag "background.jpg" %></div>
+  <div id="welcome-panel">
+    <h1>Tristan T. Hardy</h1>
     <h2>Providing Legal Assistance to Accelerate Your Growth</h4>
     <%= link_to "mailto:tristan@lawofthings.com", class: "center-block btn btn-success" do %><span class="glyphicon glyphicon-envelope"></span> <strong>Email Me</strong><% end %>
-    <h4>Attorney, start-up consultant, crowdfunding advocate, Ruby and C# developer, data scientist</h4>
+    <h4 style="color: rgb(143, 208, 249)">Attorney, start-up consultant, crowdfunding advocate, Ruby and C# developer</h4>
     <h4>Find my work at:</h4>
     <h4>
       <span style="text-align: center" class="center-block"><span style="font-size:2em; top: -10px; position: relative; font-weight:bold">/</span>

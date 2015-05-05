@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .navbar-default .navbar-brand {
@@ -18,11 +18,6 @@ body {
 .body-container {
   margin-top:70px;
   margin-bottom:40px;
-  @extend .container;
-}
-
-.home-container {
-  min-height:750px;
   @extend .container;
 }
 
