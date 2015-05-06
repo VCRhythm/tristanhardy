@@ -3,6 +3,7 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, only: [:new, :edit]
   before_action :check_for_admin, only: [:new, :edit, :create, :update, :destroy]
+  before_action :get_tag_names, only: [:new, :edit]
 
   # GET /posts
   # GET /posts.json
@@ -77,6 +78,14 @@ class PostsController < ApplicationController
   end
 
   private
+    def get_tag_names
+      @tag_names = ""
+      Tag.all.each do |tag|
+        @tag_names << tag.name
+        @tag_names << ","
+      end
+    end
+
     def set_tab
       @active_tab = 1 
     end
