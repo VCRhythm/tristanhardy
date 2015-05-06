@@ -22,6 +22,7 @@ class PostsController < ApplicationController
         redirect_to posts_url, alert: "'Quit screwin' around!"
       end
       @posts = Post.joins(:tags).where(tags: {category: params[:view]})
+      @posts << Post.joins(:tags).where(tags: { category: "" } )
     end
   end
 
