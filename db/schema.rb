@@ -11,15 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150428142248) do
+ActiveRecord::Schema.define(version: 20150506184704) do
 
-  create_table "comments", force: true do |t|
+  create_table "comments", force: :cascade do |t|
     t.text     "subject"
     t.text     "body"
     t.datetime "date"
-    t.string   "username"
-    t.string   "email"
-    t.string   "website"
+    t.string   "username",   limit: 255
+    t.string   "email",      limit: 255
+    t.string   "website",    limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "post_id"
@@ -29,14 +29,14 @@ ActiveRecord::Schema.define(version: 20150428142248) do
   add_index "comments", ["post_id"], name: "index_comments_on_post_id"
   add_index "comments", ["user_id"], name: "index_comments_on_user_id"
 
-  create_table "manifests", force: true do |t|
+  create_table "manifests", force: :cascade do |t|
     t.integer "post_id"
     t.integer "tag_id"
   end
 
   add_index "manifests", ["post_id", "tag_id"], name: "index_manifests_on_post_id_and_tag_id"
 
-  create_table "posts", force: true do |t|
+  create_table "posts", force: :cascade do |t|
     t.text     "title"
     t.text     "body"
     t.datetime "date"
@@ -45,25 +45,26 @@ ActiveRecord::Schema.define(version: 20150428142248) do
     t.text     "short_body"
   end
 
-  create_table "tags", force: true do |t|
-    t.string "name"
+  create_table "tags", force: :cascade do |t|
+    t.string "name",     limit: 255
+    t.string "category"
   end
 
-  create_table "users", force: true do |t|
-    t.string   "name"
+  create_table "users", force: :cascade do |t|
+    t.string   "name",                   limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "email",                  default: "",    null: false
-    t.string   "encrypted_password",     default: "",    null: false
-    t.string   "reset_password_token"
+    t.string   "email",                  limit: 255, default: "",    null: false
+    t.string   "encrypted_password",     limit: 255, default: "",    null: false
+    t.string   "reset_password_token",   limit: 255
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,     null: false
+    t.integer  "sign_in_count",                      default: 0,     null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
-    t.boolean  "admin",                  default: false
+    t.string   "current_sign_in_ip",     limit: 255
+    t.string   "last_sign_in_ip",        limit: 255
+    t.boolean  "admin",                              default: false
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

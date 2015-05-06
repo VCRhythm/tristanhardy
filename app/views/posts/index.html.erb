@@ -3,14 +3,20 @@
 <% end %>
 
 <% content_for :body do %>
-
-  <% if @posts.size > 0 %>
-    <%= render 'post_short', post: @posts[0] %>
-    <% if @posts.size > 1 %>
-      <%= render 'posts', posts: @posts[1..@posts.size] %>
-    <% end %>
-  <% else %>
-    <h4>No posts.</h4>
-  <% end %>
-
+  <h4 class="pull-right">
+    View Tristan the:  
+    <%= select_tag "view", options_for_select(["Person", "Lawyer", "Developer", "Farmer"], "Person"), data: { remote: true, url: url_for(action: :index ) 
+    } %>
+  </h4>
+  <h1>Blog</h1>
+  <div id="posts">
+    <% if @posts.size > 0 %>
+     <%= render 'post_short', post: @posts[0] %>
+     <% if @posts.size > 1 %>
+       <%= render 'posts', posts: @posts[1..@posts.size] %>
+     <% end %>
+   <% else %>
+     <h4>No posts.</h4>
+   <% end %>
+  </div>
 <% end %>

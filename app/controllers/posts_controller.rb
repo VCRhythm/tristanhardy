@@ -8,7 +8,21 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    if params[:view].nil? || params[:view] == "Person"
+      @color = "white"
+      @posts = Post.all
+    else
+      if(params[:view] == "Farmer")
+        @color = "#DAFFDE"
+      elsif(params[:view] == "Lawyer")
+        @color = "#FFFBDA"
+      elsif(params[:view] == "Developer")
+        @color = "#DCF1FF" 
+      else
+        redirect_to posts_url, alert: "'Quit screwin' around!"
+      end
+      @posts = Post.joins(:tags).where(tags: {category: params[:view]})
+    end
   end
 
   # GET /posts/1

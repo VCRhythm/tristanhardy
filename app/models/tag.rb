@@ -2,8 +2,9 @@
 #
 # Table name: tags
 #
-#  id   :integer          not null, primary key
-#  name :string(255)
+#  id    :integer          not null, primary key
+#  name  :string(255)
+#  class :string
 #
 
 class Tag < ActiveRecord::Base

@@ -1,0 +1,9 @@
+$("body").css("background-color", "<%=j @color %>");
+<% if @posts.size > 0 %>
+  $("#posts").html("<%=j render 'post_short', post: @posts[0] %>");
+  <% if @posts.size > 1 %>
+    $("#posts").append("<%=j render 'posts', posts: @posts[1..@posts.size] %>");
+  <% end %>
+<% else %>
+  $("#posts").html("<h4>No posts.</h4>");
+<% end %>

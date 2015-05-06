@@ -4,7 +4,7 @@ Vacantfrequency::Application.routes.draw do
     resources :comments
   end
  
-  resources :tags, only: [:show]
+  resources :tags, only: [:show, :index, :update]
   get 'blog' => 'posts#index'
   root 'static_pages#home'
 

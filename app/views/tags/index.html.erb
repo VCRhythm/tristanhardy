@@ -1,0 +1,12 @@
+<% content_for :navbar do %>
+  <%= render 'shared/navbar_top' %>
+<% end %>
+
+<% content_for :body do %>
+  <h1>Editing tags</h1>
+
+  <% @tags.all.each do |tag| %>
+    <%= render 'form', tag: tag %>
+  <% end %>
+
+<% end %>
