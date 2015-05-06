@@ -79,10 +79,10 @@ class PostsController < ApplicationController
 
   private
     def get_tag_names
-      @tag_names = ""
+      @tags = ""
       Tag.all.each do |tag|
-        @tag_names << tag.name
-        @tag_names << ","
+        @tags << tag.name
+        @tags << ","
       end
     end
 
