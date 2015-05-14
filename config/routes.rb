@@ -6,6 +6,7 @@ Vacantfrequency::Application.routes.draw do
  
   resources :tags, only: [:show, :index, :update]
   get 'blog' => 'posts#index'
+  get 'blog/:view' => 'posts#index'
   root 'static_pages#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
