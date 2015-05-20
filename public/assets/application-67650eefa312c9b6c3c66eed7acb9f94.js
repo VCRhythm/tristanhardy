@@ -13917,7 +13917,21 @@ if (typeof jQuery === 'undefined') {
 
 }).call(this);
 (function() {
-
+  $(function() {
+    return $(".tag").on("click", function() {
+      var curr_val;
+      console.log("click");
+      curr_val = $(".tag-list").val();
+      console.log(curr_val);
+      if (curr_val.length > 0) {
+        console.log(">0");
+        return $(".tag-list").val(curr_val + ", " + $(this).data('name'));
+      } else {
+        console.log("0");
+        return $(".tag-list").val($(this).data('name'));
+      }
+    });
+  });
 
 }).call(this);
 // This is a manifest file that'll be compiled into application.js, which will include all the files

@@ -380,8 +380,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("/assets/bootstrap/glyphicons-halflings-regular-8c7e3a81fcfddd99c12fab80bba274c2.eot");
-  src: url("/assets/bootstrap/glyphicons-halflings-regular-8c7e3a81fcfddd99c12fab80bba274c2.eot?#iefix") format("embedded-opentype"), url("/assets/bootstrap/glyphicons-halflings-regular-cde521afb829f829e7fcfabc094dc659.woff2") format("woff2"), url("/assets/bootstrap/glyphicons-halflings-regular-b501c6ba89bfe0d9af27981a19c9e346.woff") format("woff"), url("/assets/bootstrap/glyphicons-halflings-regular-3f35157d0fc792b1f0ee8dd82cc8aaf8.ttf") format("truetype"), url("/assets/bootstrap/glyphicons-halflings-regular-9aa4cf766b78fa283fc5c65c92bb8de1.svg#glyphicons_halflingsregular") format("svg");
+  src: url("/assets/bootstrap/glyphicons-halflings-regular-0fbbd237b485ce240b60f589ef875a4b.eot");
+  src: url("/assets/bootstrap/glyphicons-halflings-regular-0fbbd237b485ce240b60f589ef875a4b.eot?#iefix") format("embedded-opentype"), url("/assets/bootstrap/glyphicons-halflings-regular-96bfd6a1fc31da5f333b9c93e368a2f7.woff2") format("woff2"), url("/assets/bootstrap/glyphicons-halflings-regular-e1f749271d95f46cbd379383c65babf0.woff") format("woff"), url("/assets/bootstrap/glyphicons-halflings-regular-ec57f7ba6da4fc373c29db2d8dba72e4.ttf") format("truetype"), url("/assets/bootstrap/glyphicons-halflings-regular-928c98261c8c1efd41840cb5697708c4.svg#glyphicons_halflingsregular") format("svg");
 }
 
 /* line 22, /home/user/.rvm/gems/ruby-2.1.2/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_glyphicons.scss */
@@ -8591,34 +8591,34 @@ button.close {
     display: none !important;
   }
 }
-/* line 1, /home/user/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
+/* line 1, /home/user/code/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
 html {
   position: relative;
   min-height: 100%;
 }
 
-/* line 6, /home/user/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
+/* line 6, /home/user/code/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
 body {
   margin-bottom: 10px;
 }
 
-/* line 10, /home/user/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
+/* line 10, /home/user/code/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
 .navbar-default .navbar-brand {
   color: darkgreen;
 }
 
-/* line 14, /home/user/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
+/* line 14, /home/user/code/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
 .navbar-inverse .navbar-brand {
   color: lightgreen;
 }
 
-/* line 18, /home/user/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
+/* line 18, /home/user/code/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
 .body-container {
   margin-top: 70px;
   margin-bottom: 40px;
 }
 
-/* line 24, /home/user/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
+/* line 24, /home/user/code/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
 .footer {
   position: fixed;
   bottom: 0;
@@ -8628,13 +8628,13 @@ body {
   background-color: black;
   text-align: right;
 }
-/* line 33, /home/user/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
+/* line 33, /home/user/code/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
 .footer .container, .footer .body-container, .footer .home-container {
   padding-right: 15px;
   padding-left: 15px;
 }
 
-/* line 39, /home/user/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
+/* line 39, /home/user/code/tristanhardy/app/assets/stylesheets/scaffolds.css.scss */
 .media {
   border: solid 3px grey;
   padding-left: 10px;
@@ -8647,11 +8647,11 @@ body {
   border-bottom-right-radius: 5px;
 }
 
-/* line 1, /home/user/tristanhardy/app/assets/stylesheets/home.css.scss */
+/* line 1, /home/user/code/tristanhardy/app/assets/stylesheets/home.css.scss */
 .home-container {
-  min-height: 630px;
+  min-height: 600px;
 }
-/* line 5, /home/user/tristanhardy/app/assets/stylesheets/home.css.scss */
+/* line 5, /home/user/code/tristanhardy/app/assets/stylesheets/home.css.scss */
 .home-container #bg {
   position: fixed;
   top: 0;
@@ -8660,7 +8660,7 @@ body {
   min-height: 100%;
   background-color: black;
 }
-/* line 14, /home/user/tristanhardy/app/assets/stylesheets/home.css.scss */
+/* line 14, /home/user/code/tristanhardy/app/assets/stylesheets/home.css.scss */
 .home-container #bg img {
   position: absolute;
   top: 0;
@@ -8669,7 +8669,7 @@ body {
   margin: auto;
 }
 @media (max-width: 991px) {
-  /* line 14, /home/user/tristanhardy/app/assets/stylesheets/home.css.scss */
+  /* line 14, /home/user/code/tristanhardy/app/assets/stylesheets/home.css.scss */
   .home-container #bg img {
     min-width: 0;
     min-height: 0;
@@ -8678,14 +8678,14 @@ body {
   }
 }
 @media (min-width: 768px) {
-  /* line 14, /home/user/tristanhardy/app/assets/stylesheets/home.css.scss */
+  /* line 14, /home/user/code/tristanhardy/app/assets/stylesheets/home.css.scss */
   .home-container #bg img {
     min-width: 100%;
     max-width: 200%;
     min-height: 100%;
   }
 }
-/* line 34, /home/user/tristanhardy/app/assets/stylesheets/home.css.scss */
+/* line 34, /home/user/code/tristanhardy/app/assets/stylesheets/home.css.scss */
 .home-container #welcome-panel {
   position: absolute;
   color: white;
@@ -8693,7 +8693,7 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 @media (max-width: 991px) {
-  /* line 34, /home/user/tristanhardy/app/assets/stylesheets/home.css.scss */
+  /* line 34, /home/user/code/tristanhardy/app/assets/stylesheets/home.css.scss */
   .home-container #welcome-panel {
     width: 100%;
     height: auto;
@@ -8702,14 +8702,14 @@ body {
     right: 0;
     padding: 10px;
   }
-  /* line 44, /home/user/tristanhardy/app/assets/stylesheets/home.css.scss */
+  /* line 44, /home/user/code/tristanhardy/app/assets/stylesheets/home.css.scss */
   .home-container #welcome-panel h1 {
     text-align: center;
-    font-size: 1em;
+    font-size: 3em;
   }
 }
 @media (min-width: 768px) {
-  /* line 34, /home/user/tristanhardy/app/assets/stylesheets/home.css.scss */
+  /* line 34, /home/user/code/tristanhardy/app/assets/stylesheets/home.css.scss */
   .home-container #welcome-panel {
     top: 5%;
     right: 5%;
@@ -8718,14 +8718,14 @@ body {
     max-width: 465px;
     padding: 10px 30px;
   }
-  /* line 56, /home/user/tristanhardy/app/assets/stylesheets/home.css.scss */
+  /* line 56, /home/user/code/tristanhardy/app/assets/stylesheets/home.css.scss */
   .home-container #welcome-panel h1 {
     text-align: center;
     font-size: 4em;
   }
 }
 
-/* line 67, /home/user/tristanhardy/app/assets/stylesheets/home.css.scss */
+/* line 67, /home/user/code/tristanhardy/app/assets/stylesheets/home.css.scss */
 .panel-body .img-holder {
   background-color: black;
   position: relative;
@@ -8733,17 +8733,17 @@ body {
   top: -15px;
   width: 102.8%;
 }
-/* line 73, /home/user/tristanhardy/app/assets/stylesheets/home.css.scss */
+/* line 73, /home/user/code/tristanhardy/app/assets/stylesheets/home.css.scss */
 .panel-body .img-holder img {
   margin: 0 auto;
 }
 
-/* line 78, /home/user/tristanhardy/app/assets/stylesheets/home.css.scss */
+/* line 78, /home/user/code/tristanhardy/app/assets/stylesheets/home.css.scss */
 .cc-attribution {
   background-color: black;
   text-align: center;
 }
-/* line 81, /home/user/tristanhardy/app/assets/stylesheets/home.css.scss */
+/* line 81, /home/user/code/tristanhardy/app/assets/stylesheets/home.css.scss */
 .cc-attribution a {
   color: lightgreen;
 }
