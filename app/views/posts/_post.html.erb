@@ -4,7 +4,9 @@
     <div><%= post.date.to_formatted_s(:long_ordinal) %></div>
   </div>
   <div class="panel-body">
-    <%= post.body.html_safe %>
+    <section style="max-width:630px">
+      <%= post.body.html_safe %>
+    </section>
     <%= render 'posts/tags', post: post %>
   </div>
   <div class="panel-footer">
