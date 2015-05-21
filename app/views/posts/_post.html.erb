@@ -8,7 +8,9 @@
     <%= render 'posts/tags', post: post %>
   </div>
   <div class="panel-footer">
-    <%= link_to "Comment, please!", new_post_comment_path(post), class: "btn btn-success pull-right" %>
+    <%= link_to "Your Comment", new_post_comment_path(post), remote: true, data:{toggle:"collapse", target: "#comment-holder"}, class: "btn btn-success pull-right" %>
     <%= render 'comments/comments', post: post %> 
+    <hr>
+    <div id="comment-holder" class="collapse"></div>
   </div>
 </div>
